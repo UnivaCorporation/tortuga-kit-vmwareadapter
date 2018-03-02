@@ -13,19 +13,19 @@
 # limitations under the License.
 
 
-class tortuga_kit_vmware::management::config {
+class tortuga_kit_vmwareadapter::management::config {
   tortuga::run_post_install { 'vmware_post_install':
-    kitdescr  => $tortuga_kit_vmware::config::kitdescr,
-    compdescr => $tortuga_kit_vmware::management::compdescr,
+    kitdescr  => $tortuga_kit_vmwareadapter::config::kitdescr,
+    compdescr => $tortuga_kit_vmwareadapter::management::compdescr,
   }
 }
 
-class tortuga_kit_vmware::management {
-  contain tortuga_kit_vmware::package
-  contain tortuga_kit_vmware::management::config
+class tortuga_kit_vmwareadapter::management {
+  contain tortuga_kit_vmwareadapter::package
+  contain tortuga_kit_vmwareadapter::management::config
 
-  $compdescr = "management-${tortuga_kit_vmware::config::major_version}"
+  $compdescr = "management-${tortuga_kit_vmwareadapter::config::major_version}"
 
-  Class['tortuga_kit_vmware::management::config'] ~>
+  Class['tortuga_kit_vmwareadapter::management::config'] ~>
     Class['tortuga_kit_base::installer::webservice::server']
 }

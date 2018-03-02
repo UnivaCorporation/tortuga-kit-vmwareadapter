@@ -13,5 +13,5 @@
 # limitations under the License.
 
 
-class tortuga_kit_vmware::config inherits tortuga_kit_vmware::params {
+class tortuga_kit_vmwareadapter::config inherits tortuga_kit_vmwareadapter::params {
 }

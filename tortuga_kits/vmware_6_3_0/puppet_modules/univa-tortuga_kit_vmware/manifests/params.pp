@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-class tortuga_kit_vmware::params {
+class tortuga_kit_vmwareadapter::params {
   $major_version = '6.3'
   $version = "${major_version}.0"
 

@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-class tortuga_kit_vmware::node::packages {
+class tortuga_kit_vmwareadapter::node::packages {
   require tortuga::packages
 
   include tortuga::config
@@ -31,18 +31,18 @@ class tortuga_kit_vmware::node::packages {
   }
 }
 
-class tortuga_kit_vmware::node::service {
+class tortuga_kit_vmwareadapter::node::service {
   exec { 'vmware-tools-install':
     command => "${tortuga::config::instroot}/scripts/vmware-tools-install",
     creates => '/etc/vmware-tools/configured',
   }
 }
 
-class tortuga_kit_vmware::node {
+class tortuga_kit_vmwareadapter::node {
   # The dependency should ensure that tortuga_core is installed prior to
   # this recipe running.
   require tortuga_kit_base::core
 
-  contain tortuga_kit_vmware::node::packages
-  contain tortuga_kit_vmware::node::service
+  contain tortuga_kit_vmwareadapter::node::packages
+  contain tortuga_kit_vmwareadapter::node::service
 }

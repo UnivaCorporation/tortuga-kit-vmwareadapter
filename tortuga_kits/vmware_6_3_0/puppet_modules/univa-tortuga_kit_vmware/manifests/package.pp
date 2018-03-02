@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-class tortuga_kit_vmware::package {
+class tortuga_kit_vmwareadapter::package {
   include tortuga::config
 
   exec { 'install_pysphere':

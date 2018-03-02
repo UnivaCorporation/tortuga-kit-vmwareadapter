@@ -1,6 +1,6 @@
 {
-  "name": "vmware",
+  "name": "vmwareadapter",
   "version": "6.3.0",
   "iteration": "0",
-  "description": "VMware management component"
+  "description": "VMware vSphere 5.x resource adapter kit"
 }
