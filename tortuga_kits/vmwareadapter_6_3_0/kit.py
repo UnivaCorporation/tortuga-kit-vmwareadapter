@@ -35,7 +35,7 @@ DEFAULT_HARDWARE_PROFILE_LIST = ['VMware']
 
 
 class VMwareInstaller(ResourceAdapterMixin, KitInstallerBase):
-    puppet_modules = ['univa-tortuga_kit_vmware']
+    puppet_modules = ['univa-tortuga_kit_vmwareadapter']
     resource_adapter_name = 'vmware'
 
     def __init__(self):
