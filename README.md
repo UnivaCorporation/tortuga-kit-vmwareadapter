@@ -11,6 +11,7 @@ to enable support for VMware vSphere 5.x compute nodes in [Tortuga](https://gith
 
 Change to subdirectory containing cloned Git repository and run `build-kit`.
 `build-kit` is provided by the `tortuga-core` package in the [Tortuga](https://github.com/UnivaCorporation/tortuga) source.
+Be sure you have activated the tortuga virtual environment as suggested in the [Tortuga build instructions](https://github.com/UnivaCorporation/tortuga#build-instructions) before executing `build-kit`.
 
 ## Installation
 
